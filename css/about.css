@@ -1,0 +1,46 @@
+.about-me{ 
+    padding: 3rem 1rem; 
+    background-image: var(--aboutMainBg, radial-gradient(#212121, #070707));
+    padding-block-end: 5rem; 
+}
+
+.about-para{ 
+    font-size: 0.8rem; 
+    max-width: 600px;
+    text-align: left; 
+}
+
+.about-me > header h3{ 
+    font-size: 2.5rem; 
+    padding: 0; 
+    margin: 0; 
+    text-shadow: 2px 0px 0px #9669de; 
+}
+
+.about-me > header h1{ 
+    font-size: clamp(1.8rem, 2.5vw, 3rem);
+    padding: 0; 
+    margin: 0; 
+    text-shadow: 2px 0px 10px #898989; 
+}
+
+.contact-me-button-wrapper{ 
+    margin: 2rem 0rem; 
+}
+
+.contact-me-button { 
+    background: transparent; 
+    border: 1px solid white; 
+    padding-inline: 2rem;
+    padding-block: 1rem;  
+    color: #c2c1c1; 
+}
+
+.contact-me-button:hover, .contact-me-button:focus{ 
+    cursor: pointer; 
+    background: #4456cd; 
+    color: white; 
+    transition: all 1s; 
+    border: 2px solid white; 
+    box-shadow: 3px 3px 10px #4456cd; 
+}

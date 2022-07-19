@@ -1,0 +1,18 @@
+@import url(/css/vars.css);
+.skill-3 { 
+    padding: 3rem 1rem; 
+    font-family: var(--skillFont) , Verdana, Geneva, Tahoma, sans-serif; 
+    background: var(--skill-3-bg, #191919); 
+}
+
+
+.skill-3-flex{ 
+    flex-wrap: wrap;
+    
+}
+
+.skill-3-img{ 
+    max-width: 100%; 
+    width: 400px; 
+    border: 1px solid white; 
+}

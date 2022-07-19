@@ -1,0 +1,87 @@
+@import url(/css/vars.css); 
+
+.flex{ 
+    display: flex; 
+    gap: var(--gap, 2em); 
+}
+
+.flex-row { 
+    display: flex; 
+    flex-direction: row;
+    gap: var(--gap, 2em); 
+}
+
+.flex-col { 
+    display: flex; 
+    flex-direction: column; 
+    gap: var(--gap, 2em);
+}
+
+.place-center{ 
+    display: grid; 
+    place-items: center; 
+}
+
+.semi-bold { 
+    font-weight: var(--font-semi-bold); 
+}
+
+.bold { 
+    font-weight: var(--font-bold); 
+}
+
+.extra-bold { 
+    font-weight: var(--font-extra-bold); 
+}
+
+.thin { 
+    font-weight: var(--font-thin); 
+}
+
+.extra-thin { 
+    font-weight: var(--font-extra-thin); 
+}
+
+.regular{ 
+    font-weight: var(--font-regular); 
+}
+
+.raleway{ 
+    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.letter-spacing-1{ 
+    letter-spacing: 1px;
+}
+
+.letter-spacing-2{ 
+    letter-spacing: 2px;
+}
+
+.text-white{ 
+    color: white 
+}
+
+.text-black{
+    color: black; 
+}
+
+.uppercase{ 
+    text-transform: uppercase; 
+}
+
+.highlight { 
+    background: #a9a9a9; 
+    color: black; 
+    padding-block: 2px;
+    padding-inline: 5px;  
+    border-radius: 2px; 
+
+}
+
+.underline-heavy { 
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+}

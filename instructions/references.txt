@@ -1,0 +1,4 @@
+95% of the code is original, written by me. For the navbar, I have taken the HTML format and some JavaScript code from a Youtuber called Kevin Powell, feel 
+free to check him out here: 
+
+Kevin Powell YT Link: https://www.youtube.com/kepowob

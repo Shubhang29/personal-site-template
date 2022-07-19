@@ -1,0 +1,45 @@
+@keyframes slideInFromLeft{ 
+    0% { 
+        transform: translateX(-150%); 
+    }
+    150% { 
+        transform: translateX(0); 
+    }
+}
+
+@keyframes slideInFromRight{ 
+    0% { 
+        transform: translateX(150%); 
+    }
+    150% { 
+        transform: translateX(0); 
+    }
+}
+
+
+@keyframes slideInFromTop{ 
+    0% { 
+        transform: translateY(-50%); 
+    }
+    50% { 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes slideInFromBottom{ 
+    0% { 
+        transform: translateY(50%); 
+    }
+    50% { 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes nav-bg-anim { 
+    0%{ 
+        background-position: left;
+    }
+    100%{ 
+        background-position: right;
+    }
+}

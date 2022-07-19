@@ -1,0 +1,190 @@
+.logo{ 
+    padding: 0.8rem 0.8rem;
+    margin: 1.2rem 1.2rem;  
+    max-height: 70px; 
+    max-width: 80px; 
+}
+
+.mobile-nav-toggle { 
+    display: none;
+}
+
+.top-nav-container{ 
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em; 
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 2rem;  /* disable for smaller-devices */
+    background-image: linear-gradient(to left, aqua, aquamarine, lightblue, 
+    #7c78b3, turquoise);
+    background-size: 400%; 
+    animation: nav-bg-anim 15s infinite alternate; 
+}
+
+.top-navigation{ 
+    list-style-type: none;
+    padding-block: 0; 
+    padding-inline: 5px; 
+    margin: 0; 
+}
+
+.top-navigation li a{ 
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-navigation li:hover, .top-navigation a:hover, .top-navigation li:focus, .top-navigation a:focus{ 
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-thickness: 3px; 
+    text-decoration-color: inherit;
+}
+
+.top-navigation a { 
+    text-decoration: none; 
+    text-transform: uppercase;
+    color: white;
+    font-weight: var(--font-regular); 
+    font-size: min(1em), 2em;
+}
+
+.nav-span-text:hover { 
+    text-decoration: underline; 
+    text-decoration-thickness: 4px;
+    text-decoration-color: white; 
+    text-underline-offset: 29px;
+    cursor: pointer;
+}
+
+.top-navigation a > [aria-hidden="true"] { 
+    font-weight: var(--font-semi-bold); 
+    cursor: default;
+}
+
+
+@media (max-width: 46em) { 
+    .top-navigation { 
+        --gap:  2em; 
+        position: fixed; 
+        inset: 0 0 0 30%; 
+        flex-direction: column; 
+        padding: min(20vh, 10rem) 2rem; 
+        z-index: 1000; 
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;  
+        background-color: hsl(0 0% 100% / 0.5);
+    }
+
+    .top-navigation[data-visible="true"] { 
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle { 
+        display: block; 
+        background: url('/images/menu.png'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute; 
+        width: 2.5rem; 
+        aspect-ratio: 1; 
+        top: 2.8rem; 
+        right: 2rem; 
+        z-index: 9999; 
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] { 
+        background: url("/images/menu-close.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute; 
+    }
+
+    .mobile-nav-toggle:hover { 
+        cursor: pointer; 
+        width: 2.6rem; 
+    }
+
+    .nav-span-text:hover { 
+        text-underline-offset: 2px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1275px) { 
+    .top-navigation { 
+        --gap:  2em; 
+        position: fixed; 
+        inset: 0 0 0 30%; 
+        flex-direction: column; 
+        justify-content: center;
+        padding: min(30vh, 12rem) 2rem; 
+        z-index: 1000; 
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;  
+        background-color: hsl(0 0% 100% / 0.5);
+        backdrop-filter: blur(10rem);
+    }
+
+    @supports (backdrop-filter: blur(1rem)){ 
+        .top-navigation { 
+            background-color: hsl(0 0% 100% / 0.5);
+           backdrop-filter: blur(10rem);
+        }
+       }
+       
+
+    .top-navigation[data-visible="true"] { 
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle { 
+        display: block; 
+        background: url('/images/menu.png'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute; 
+        width: 2.5rem; 
+        aspect-ratio: 1; 
+        top: 2.8rem; 
+        right: 2rem; 
+        z-index: 9999; 
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] { 
+        background: url("/images/menu-close.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute; 
+    }
+
+    .mobile-nav-toggle:hover { 
+        cursor: pointer; 
+        width: 2.6rem; 
+    }
+
+    .nav-span-text:hover { 
+        text-underline-offset: 2px;
+    }
+}
+
+
+@media (max-width: 46em) and (max-width: 60em) { 
+    .top-navigation a > [aria-hidden] { 
+        display: none; 
+    }
+}
+
+@media (min-width: 46em) {
+    .top-navigation { 
+        --gap: clamp(1.5rem, 5vw, 3rem); 
+        padding-block: 2rem; 
+        padding-inline: clamp(3rem,10vw, 10rem); 
+    } 
+}

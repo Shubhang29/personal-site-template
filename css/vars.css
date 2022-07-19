@@ -1,0 +1,53 @@
+:root { 
+
+    /* the main font for the whole page */ 
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+
+    /* look at: https://fonts.google.com to add more fonts */
+
+
+    /* font types: bold, semi bold, regular, thin, etc. */ 
+    --font-extra-bold: 900; 
+    --font-bold: 700; 
+    --font-semi-bold: 600; 
+    --font-regular: 400; 
+    --font-thin: 300; 
+    --font-extra-thin: 100; 
+
+
+    /* homepage name background colors(animated) */ 
+    --namebgclip: linear-gradient(to left, 
+    turquoise, 
+    lightblue, 
+    #daa1a1, 
+    #f8a0e8, 
+    #f47474, 
+    #66ebe7,
+    #e365df);
+
+    /* home page skill list symbol(list type): */ 
+    --listStyleType: disc; 
+    /* disc is the default, here are some other famous ones: 
+    1: disc (default) 
+    2: circle
+    3: roman numerals(uppercase and lowercase) 
+    4: latin (uppercase and lowercase) 
+    5: square */ 
+
+
+/* Scroll Bar Customization */ 
+
+    --scrollBarWidth: 15px; /* change the number 15 to adjust width, 15 is the default */ 
+    --scrollBarColor: turquoise; /* Default color for scrollbar is turqouise, change if you want to */ 
+    --scrollTrackColor: #ededed; /* Default color for the scroll path is faded white, change if needed */ 
+
+
+    /* Skills */ 
+    --skillFont: monospace; /* skills font */ 
+    --skill-1-bg: inherit; /* skill 1 background color */ 
+    --skill-2-bg: inherit; /* skill 2 background color */ 
+    --skill-3-bg: inherit; /* skill 3 background color */ 
+
+    /* Footer */ 
+    --footerBg: radial-gradient(#212121, #070707); 
+}

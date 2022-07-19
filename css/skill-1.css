@@ -1,0 +1,24 @@
+@import url(/css/vars.css);
+.skill-1 { 
+    padding: 3rem 1rem; 
+    font-family: var(--skillFont) , Verdana, Geneva, Tahoma, sans-serif; 
+    background: var(--skill-1-bg, #191919); 
+}
+
+
+.skill-1-flex{ 
+    flex-wrap: wrap;
+    
+}
+
+.skill-1-img{ 
+    max-width: 100%; 
+    width: 400px; 
+    border: 1px solid white; 
+}
+
+.skill-para{ 
+    font-size: 0.8rem; 
+    max-width: 600px;
+    text-align: left; 
+}
